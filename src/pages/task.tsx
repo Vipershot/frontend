@@ -21,7 +21,7 @@ export default function Task() {
       <div>
         <ul>
           {tasks.map(({ _id, title, description }) =>
-            <li key={_id}>{title}<br />{description}<button onClick={() => deleteTask(_id)}>Delete</button></li>)}
+            <li key={_id}>{title}<br />{description}<button className="button-basic" onClick={() => deleteTask(_id)}>Delete</button></li>)}
         </ul>
       </div>
     </>

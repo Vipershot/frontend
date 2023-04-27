@@ -37,13 +37,13 @@ function Login() {
     <form onSubmit={handleSubmit}>
       <label>
         Email:
-        <input type="text" value={formData.email} onChange={handleUsernameChange} />
+        <input className="input" type="text" value={formData.email} onChange={handleUsernameChange} />
       </label>
       <label>
         Contraseña:
-        <input type="password" value={formData.password} onChange={handlePasswordChange} />
+        <input className="input" type="password" value={formData.password} onChange={handlePasswordChange} />
       </label>
-      <button type="submit">Iniciar sesión</button>
+      <button className="button-basic" type="submit">Iniciar sesión</button>
     </form>
   );
 }

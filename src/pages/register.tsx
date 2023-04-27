@@ -35,6 +35,7 @@ export default function RegisterForm() {
       <label>
         Email:
         <input
+          className='input'
           type="email"
           name="email"
           value={formData.email}
@@ -45,6 +46,7 @@ export default function RegisterForm() {
       <label>
         Nombre:
         <input
+          className='input'
           type="text"
           name="name"
           value={formData.name}
@@ -55,6 +57,7 @@ export default function RegisterForm() {
       <label>
         Contraseña:
         <input
+          className='input'
           type="password"
           name="password"
           value={formData.password}
@@ -62,7 +65,7 @@ export default function RegisterForm() {
           required
         />
       </label>
-      <button type="submit" >Registrarse</button>
+      <button className="button-basic" type="submit" >Registrarse</button>
     </form>
   );
 }

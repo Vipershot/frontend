@@ -32,9 +32,9 @@ export default function CreateTask() {
     <>
       <div>
         <form onSubmit={handleSubmit}>
-          <input name="title" onChange={handleInputChange}></input>
-          <textarea name="description" onChange={handleInputChange}></textarea>
-          <button type="submit">Create Task</button>
+          <input className="input" name="title" onChange={handleInputChange}></input>
+          <textarea className="textArea" name="description" onChange={handleInputChange}></textarea>
+          <button className="button-basic" type="submit">Create Task</button>
         </form>
       </div>
     </>
